@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>plc | 愔辭</title><meta name="author" content="@王兮沐"><meta name="copyright" content="@王兮沐"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="plc">
+<meta property="og:url" content="https://ini105.github.io/2021/07/13/plc/index.html">
+<meta property="og:site_name" content="愔辭">
+<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ini105.github.io/img/avatar.png">
+<meta property="article:published_time" content="2021-07-12T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-01-11T17:59:13.834Z">
+<meta property="article:author" content="@王兮沐">
+<meta property="article:tag" content="plc">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ini105.github.io/img/avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "plc",
+  "url": "https://ini105.github.io/2021/07/13/plc/",
+  "image": "https://ini105.github.io/img/avatar.png",
+  "datePublished": "2021-07-12T16:00:00.000Z",
+  "dateModified": "2025-01-11T17:59:13.834Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "@王兮沐",
+      "url": "https://ini105.github.io/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ini105.github.io/2021/07/13/plc/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":152,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":52,"languages":{"author":"Author: @王兮沐","link":"Link: ","source":"Source: 愔辭","info":"Copyright belongs to the author. For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"You have switched to Traditional Chinese","cht_to_chs":"You have switched to Simplified Chinese","day_to_night":"You have switched to Dark Mode","night_to_day":"You have switched to Light Mode","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-center"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: true,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'plc',
+  isHighlightShrink: true,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load', preloader.endLoading)
+
+  if (true) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="web_bg" style="background-image: url(/img/background.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">27</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">32</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">22</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> HOME</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> ARCHIVES</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> TAGS</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> CATEGORIES</span></a></div><div class="menus_item"><span class="site-page group hide"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> WALLPAPER</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> MUSIC</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> LINK</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-regular fa-address-card"></i><span> ABOUT</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/default_top_img.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">愔辭</span></a><a class="nav-page-title" href="/"><span class="site-name">plc</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> HOME</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> ARCHIVES</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> TAGS</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> CATEGORIES</span></a></div><div class="menus_item"><span class="site-page group hide"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> WALLPAPER</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> MUSIC</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> LINK</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-regular fa-address-card"></i><span> ABOUT</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">plc</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-07-12T16:00:00.000Z" title="Created 2021-07-13 00:00:00">2021-07-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-01-11T17:59:13.834Z" title="Updated 2025-01-12 01:59:13">2025-01-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/languages/">languages</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/languages/plc/">plc</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:365,&quot;messagePrev&quot;:&quot;It has been&quot;,&quot;messageNext&quot;:&quot;days since the last update, the content of the article may be outdated.&quot;,&quot;postUpdate&quot;:&quot;2025-01-12 01:59:13&quot;}" hidden></div><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="5397352a383b9db3336a49f5181dc5f8c150ca3911ed6c2889b49988cd8c0719">2927d6abb37c17bdcf74b51704d84c914a8e7111cdefc71d2a041710ebde34bf6230ebd6320db2fadca6990de9dd14b497dea6e05788442e52c7baec1e0251a9e406c629b13314f79480d20ea81d868c84e5c8c4d802b705645d2df70693e3aceec2472d00fa2ebd7cd429b4197740d30abc641cca6abf2aa8ff420779be1accadf99a97aa760c713e66743bf9db60aba0ef7e1b55081f3b8f0893084405a36724038579f9e485d0a900f2236f83ba6574549d0a8b45c08ff261501b968ee0c1deceb0c373a66a6816f1ecff33596b94d743301ac1b9eb70763db93a673556e7d952b15a57f0817c48271456a1d19dbc1116fd340daecebcdd5dedf3ef02c16ac8e9bc3191e1af0f9f0159b2e0f01e138937dbc87e8c10c46217de2cc501c72de1924aa489584a9a762c6108260fe8ec9d019d7e9fba8a1b94107b0905365b2a53f1353cfce2e66814e51894defbd9b281cf105ce39e93bbd441d4b6dfc0768f0ef156b512f7b9d0745246eb63fd15646b3cece1a4fa0fd8a8a232b3a4159d3264b7c351f8041f8542f7eac98764342c5cf9fb3200ba58618bad05f110dd9ca92367b8aaf6e7093b2e2acfbda8afaaf00f78a4a86c4a3b0b433baae6cda9a5dd1f90dd53e14fbb3c8a81d3dae83dc1bc81021457334dd859aac5017a30d5a25cbe994c897b43d3ed36915a5f529bcc38f77daa4b181a76261571a8e5ec0973055f2d59a896b1c3352559c3106c0ad6fbea07f819fd586b39128f2578528182f8156f423be8dd23ae248e32bcd32f94da36e0baac7b68346f79bd0d332864fb5cd3a8cf58b8cf596f383a4681f0f2253c823cb56389ab27ac53e8599ccf62be2c439b1f2626d4000150f07c71074b75bc58f138ff3095d477363b0fdb79c0af3c1bd24851d5fdacf18879d52faccb756106c85073b0de8e92a74897b2fb4b709737036857c83f3830c7a4387fd96b0eaf26c3ad38329640ade552d76325cc783000c5373823f27fe9da1ce96c9c781e9e7e73e9d37d844363b038c9db01bab3d02d252162947fa64e607fe68e629c064119a60e8ba3a8c6b93565182087dbf7179aaec4b8d930ca58ffbcc1741817703dd3429878b3bfef6ff102446da7ffa4ee87ab72388817760e539e6d34769442fa992d6db15ecf129e24ace5263403409439039091d23b78c6315285b65ccb1e5847a8e8c704b7305dbb8c9ddc2b47de720c0d5cc12742e8746f7ae378f7916ee960e86f12057ac16d79f8b581e7cfb8661480912239c1b70534bff67b5f0dcedce67f2f4fcb174b6794452c2abf99cbc67c1631eb4074efb10ce75efe6a48721088c58db654767cfd5e5a632e023ba0a02ac6899c82a6166713674e61964936136c3d339998cb66381ed120dceafecd47fee420d0def2d0254fc2e8e35ffc5d399a61932c87a7d55e05d8d8a64e10b6c9f112d773913612a0a30ba3bad194a3270edde8b8ebf30c31e713dd0846c31fab6619153a7008f14ba34af9234f179c08ffefb5b6dbdbc17c32dbf305cddcdd2c828676792634d0c295e6cc7a64663f08cca7945cc597725b4136e9b95c18c008880a57d269352a586c498011f2120e06e77fd3c5cc16e1b7e68f5c5ab111ae00a021b9670b7885914b97a4eb0381ccd07ed6fdb0f8671d056b2a215c0543e1f45ab38db8d3bc53d50bcae5f445a5b9d7b9b1c4944eb0849b73ffc8f98c5c6936409d3f58918c5964a24b9086a15fd59bb16f3627b888d00ddaaeda7b3f90d90a7a4a06fb8a705d5f01df544b0957d1068acc7220053c90349130a46a5a7b3e253c7d10b92de60ab386d8acefc426cbbf8595f44e99280a1e34510727b695bc67af21aa45823efa716701bffb43831b34fc66d02b370e3390a14ccdfe59a02b4e36810471352f4e318cd616540ee5a61d0fc90139c4f14d8d488f184efee7d840e3e5054db66f313a1ccd1045a4f1d1b465a3f9cdc3ce13430f5a7967deac9fbf91693a7fcadec77b0687fd6c9461e62289d2f7a278fffd78c61bf7d60e1b51b9d4e631eb2eca4eade96530c18159777d3fa16b0b3dcd6d20fa4113e15b42418848e49cacfc280647260320b3b09df4d9749801ec15b4654ef34bc7f88ab757436f0af4fc812c513dcd7292a07122b0e932794407ecbb405457bebc58e271abdb53c13ed40ef09d55aa47829d4855a71de65a8276231f7b61f8c8c00f2cd6dded443d2c85a5571cfa8ba73fb71bcb921b0d5e74b3a67ec73153f026f1e369ceae72d829c58f093a3f05564c75d2c8e555a93fc071cb7c16ae7db8c15075e281f52fd504603eff74fb17f42892bdd8dcd9258e3b734897b4cc84b8f1568095ed7dfdaa1bd6e184f4a4df1e2dae10d66d5e2b86157460d9bb95aa75531a3fe9dceea4492cb0df301164fa691237b7eeeaa0ca996c0b3c5876829fb7e7951f41df2390219bb739c5f402e87303258a711e9c488f76f807e14578f19ac6a72d1933eca613539d129006f161cfbfef4cf6a193bf11f1c0377403eebdf59af237b3b0d01f0f065b7b5729a3cdd61d940c06184871827c9341cae67798e83493b651a87e15f5ffe01e787b92b81f0da4661744b79f26da7aac3dc25ca9d92712005642aeca2424fe2d78f2e18f032711c43a9defe411b7dd86bb18bfa7cef6ae577389e72c2978ae73980618113ec4135ff1587723d21ecd2a176e7543f7cd20eccea7fde6738e0c4c0628694f934dbdf357f3843953a708a55c3749aca59995c7187f98deb42433a571c0e8cfc8b229e49e6c7c049923afe79adc1a8b32ecfc06d3194a6d591b266998e077549fde332188c854498faf38eb0681cc38e73b97a2ccc729e6e0b96500968bc78084b497572ed0f5cbddfe5793067982f8f20b4342525ce74d093313d58d513793d83f5e71c3b35a36cccffa9a7e12c2e368e44fedc80be631489a13e00cfd496407f929b322d18b515745e64b5d35411a29da428ce68f6e10d8538dbb05fb15ad45b16854debd1813bc887c918cd9240be9a387eee48a5a46b80c24249a43226e10c5b932ee7099eb77bc3c5f98ef9f195e428681baef80dffa3efb7e82c8911410ee85fe68c23710ee8867643ab63edc8d95b6f98a6e3b95b8492628878772bdc57d0d3f1df221b0b86c2a1a80ead91e9260a6ccc87121f47d318ed7608b972c4501f707a7b89bdd302225e2f6d8408f2cfb996e0d36469dd4f67f3a2896bf5a21ba79b3fea12c22fe701d4ff65699eb3850e6b21ea65e439bb35707eea443b710d004250086dd25d76eefdd5a8d402f388f9e321e90a3529256992c710cefdabbf1334c4a1f178986b1f4fe0c895767a99d664dd9ac10731f1eca57dbad5a3389417c00fd88e04fe506a1e6c2e04a71e8570f322c72bca3f0f0cc103c751756a8e966753f49999ffd343238a1e42b4d70cf05d18b5cab32f4a195245d685496f257d153d76cda01dbed170e95a115c1ef679eba86f4c07af74bd1aa044b5eeb0694bfb31e3d828b9f17a37911c80d2915d6d8ef06f1cfe604021f31636c6b0fb2568f45a49d249d3f9e958462fe2f6b5c3a0113f494fde88e9abda0c0ae48787a434872a5b2bb92113a74e7bf10c2ccbcc8d9d124be6e46fe6ffdb0ab3a601b91c87a2fc263ed08a5193cceee7a665053bb8d0ec53c13f64cb2b691dd4891f1a0fe2cce0989ad89d4c9e7d1e7e15ea8786bf43b7aaaed4685a422075b692fd8bf03c5216bc9e154957a8f3a2677ae97ec68d2b06d2b0bbde4bbb327eb4c03004991501626df822264def7ea2a93d3c1a4335cb5014f47773eb8bf98a4a2327ddb03d3f0cc6e34ab43bda0b8b12c25dba9e84dc508e733c7c55f6c1db1186a3db1365aefece76e7ae54036207c30bd04b9dbf46494ad1478796053adda52d741156262068aa9b976573d568ec6e54a845f6ac42a65f515080ff577090d8e3c005a459ae2d8dafe6ac055c79a0463010fcd48956e1c2c73b4cede96d5dd8f12739cd4cc7d422eb6dee210e29292d2d12d739407c94621f53a14691d41a1db868ea1e454d42476a4900c4695f7689f88933b655cf6c059610e630da08344e9f384b5272582592890684225fa57c0f314f2de72bc4f368e529300b66b1c9759eae7fbd0d9f706a9ab09122f2aab2e6ddb880d63d0520b96955e728126f46db3c7c83505139c5c94e84b0fe9b4870a08416459fefedc5322acbf04a0ceaa3a3237b5431ef3bcac37cef5b7be321f742c4b55e6207589a43339e733941c515cca73c3c8f65b96aa19a2efdb0da58ca24e4a4ec72c103fe1f26f496c699d0fcbc2c7ed3b918a20313a7e1744b46845afe7b5880c6f72da43f7821f116c22b7f34df4b61530c76432e80e4f199ad1481a4fe33d0ac1f2b165df97aa53c4f7c09d3e50fb6081799170d1dde179f3bc59fa6996006f476bf6d6b93de1155031a412aa136d7e5eaf98ddd6133db93aae82d6a57a06117af6f81af60ea61e9fc1928d560e8d4a8a419ba477fffecedcbe5d2afbd2dc7cabcea8ab08c74d3c458f33f8ce4c3ec59fd9ea5e23e0dd2aa496cb7411b253e6e09bf926ebb8845e30a5b38fe1d067ec22d40b77ce6fa17a91aff009c1bb1928ee370fc02467b60e1b26ad86e495bd5657f4d2f7ebf663b57da8b1eede438de1212df5b21b686276a66ab027157258802989dbc425c8bb3117151e717d0fe52540402494ac9ae011e3081feedc1562e6a73e844c3e15d83565370140e36f31c4bf66ffb36663a943cf236d5cf37f0f21b12617db87f5b703bec6d4163053da3172ce754fcf0abe9da1b9b88bd1dc26cbcf69fef29b49d0d93f000bf8b618103016f0058bd96a99e5de00026199f4eca31ea5996537449ef7cd9ae62e4d593abf56a9f9cfec69b3eebc129333abddde7e57cdbee29ba6d626583139fe425ace6ca77686402139237ac918a25e391bb55d43e64043944e477d21d8b81f2a7592f846106ecfb29c3038801946afd39d7854b3cf8065a5ecf3cb657aed66479a89497b5753d8b07c337af7be5a905d9bb924bbf35380eca3c983a7bbb5ed3f7f44ae359925e3df9f7fb06b02488d0449e0c229ea09da4a92fb97f08c182af466c4f05a485529e69b83a5d8d0129c3b6e649c0461e541ca4d0dc9822a5d074ec0c92f945690e4f6f54a1a19966cc7993ff16eccf707616801e58b275550d249d94c039b48e16aca545bd9484b9585e43735f6a235be3d4cf5d829f045427942157b45b897803b0647b3a7fe377d991b46e88b4e36ff9c6d830dce688c8d6b7773e8322bf3e02d854f48368c1c8a133393026c9b9817a402d4f6de0532900c70fd9049ae2f3d5178e8d3e8592629c89663ebcb9b92afa5ab59579121c22d75447e8daa5464f13a27d5ae615ce4eee1861eb7f12351486d33c0d13f167735e012146467630403d1490a706d74cbbacc2969c018b41b73a08c676b586d50cc22e44a634a5fc44d138dae9fee899a0c4002d057eab3907c783bc6abb4d0fccc9c4e021f2bdf80d152cd5d1fbf1e33b7d8052bd4f6ebd45c8f62861190eefbe55d888cbb1fcddd09595ef0fa7c3b615b466d4b710086610d6264a53bd0c9492d660aa2bf79910a3304bd89f73811a306d89b26f7eeb064ba6ff3399561af71c023526b552f64c627fb19282aa9ea2a29404539e726aee13a9d38264c6b80df830be53dbca2971c424cb8f50ec1d85525b9d27929d114cd5134b8982400c628af21dd378b5b3298e4e503010153dde48cc149580ed58e398f6115d32486e6494614ccdc7a1b9f9ba6d930a0efff3dd775007014f74d99ce30ad37b465477dd8016bc276499b1caa90e1d337c43dd66b0fbee8c88bd9f9afb1b9cea0d07171af5e16743671d101ededf8178c2bb4298325cac3aa3118fbacf325a94b2ea6618a3b5c0b8a7e2226408fdf0815ec08aea78fb9fc06f5342ca7f656ca177297f7796824b4ef00760796ed7ebb8244f3d2bb7db3adc204687382e2ec807fb9eb2b3ecf7f1489321b68aea92c94fd8e2b63f629ef78c6c884f597004687b3013b60db30a9f463f29a3f2ccc8516c5b438493b723895d481fca93453eb92ce9cc1633379decd74130e5cdd3aa70c67a447d597b063772ab016ce13a9ea8f4af3fba5ac3df14eb5e4930f800510b8bb19f67916161d93488c59434eb0eef16cca5bf1f0f4f7ab6c7403db60b9e16fe6f5898b37add7d434f38d7c9f713b28f1f02d52a85ecdfef4c8e14e25a74c94e54c2836f26196ee08a4355320a338f79a671a8b67681b5fd3c20ece81bbb0cda59d4f6873842fb3fcdc89edb11a75f3763f7fcb87cdf971537af1835e7e091996eabc1a8279e2fabde717ace3e0130594a4986a77fa309cb43b0b1b2b124b6292cd3dd4f7f681ef964816d73326e67333979b0a896d257dbb589dc0cad055050b4583bc4e1c0e3222eeb71323be94fd94d3ea63612b55b2dbcebae57749dc391fb91be678dcdb7b7005b7aebfe4dbbe14338c64f3a47ec7a4108dc1b5ab4ad4fe02c34a3d5dcc3573c5cec86d6ef247bddd8e949b1c0cefe1687143e4f4443cd97ecd4b0d893abe40ab17303ec498567d01423cce34812e1d4a359d854457c1e5ede9a85ddfffffb2d18394175187a2f6979dbd197777d88bdaf9b5692f12e865c413f94136db1057923d7510c51ed32ea42420922c6ff58706127b768d8d3427cc4baef01b2d91d0e1a562e4d76002a0d6a3b068846a5f8bd271b4ad7a1708c6cb4f658fa67f931103b146dd3ed6af76bb6dda14b2785622eba9bbf175cb95b99e28712f60bf18256cd16554b4e25dd07c2fb7a70aab9f8c5ceae5ce9e8fab87705f9476958965a538f7ee54f4052233695e1663a604682da3638e86024ad14b964e89c8969be99aa880fea53d35a831e97da2b45139aca73eaa93631347f1388a599c50d9fcee71a81529c9701d0d0b6dcb1b6b5d8bc15ce61de1d91b0c69076c6aa8e579eb3dccf80906d2cad6004b8343c8c766fafbc091b8e2d75d63051e4cf8892c058834522378bf7ded486b4be4098326c246b34eee329e536957865da363a0f1e630223849a6a6a9a9bf8dbf4a80825af4bc793403b7fee5431d92d2188d942def9a32c0c35a46f812dfe99e6a4220e91025cfb3cf1225b5ca261492f4a24573e1af0175aea12362858221d6c8ef1086ca45473ec0b4c76066b18055c7c2fa6c9593a3835797f81d69e8b296cda7a65ccd196980201b69bd5477153902039b41105debf6532d09cf301b24ec1da97e69baf3dc443b0a500e271d426d490aac219470cef63e57c36485409427cfd13fb567174594f0e33bac3f68ece9e9b0aaf252a88d9048c227f4c62b0e9628a73c031e6e20bb7de079f2c6c44b2bb5e29891c4aa72d6e898a6ba1a2353c7fa33b37aa2fe7b85e895a90dbb619d176a6c24a0f94c5e2ceaa632136cb9df4d190806fa658ad7fca7a5fa07fd2347da0adbe2b240db4ffa108dbaf7c2389cad561fec5b4968a43443404de140f21a5a4f8c50f8175a69f6b326ae6b7b4163436afd183e2e36ae0be18f51da8d4194574f5b68ccce04cf928864e1c5944b1a64c6ce4e18217836ad81a093e8226612c60b5a5d41ddabe7bb92bae4e94ca10eef20f418ccc24643b4be228c61f8ee9f439c8a50ec0444e1fad1147286e6b9136e0ca0e79e171b9518f8ea72dc82b7d631eed12ddf3c77b8b0f211b1bc1d1b044c54459ecb54e82cb390a4bdfe8aadf97cce9090146087436fbff2c960dd3c1b0e54a5b1f91ff9df40d90f406c7a0bfe26728ccdfc5abdb41a3fa1f03f62a4848456f098ebf4f6d7085158fa822980d1f640b91ca818483ee1b1fd7950e5a66c498537b1230745ae99622c0cb7663f6e664554a5e9878c81208f8acb07d92afd4f09e1c54ede095b6cd57506ef31718a112102a2f396066c536a53168ab2ada247a1a64d855e7e03731e5812adba0416d4dd09acb8676e273d8deac4b7179b263b66dbd77233d7d083a2da75ba8574c7350bcdcf0272a3e5d55b5e35fda232e12994cc8f16f760b9037ee97df2ba55a949ef086e0a224b99c8541f4125f0382485ebf2b1392b3842bd2d778edcdf2826ab0b998db319f96ec179ce7c07d77a7cb21107f9cc71142322c178967af2e40e55ed60cbde69392534d03910dfa76faa31fb7b3d24dd324c8d4f2a6fcea02211eb83b8a21a165021a1cbe26f9b3280b8df6c57d4bf47a24bca86b0534e894d75430331c4b1123049931c448f0da6e2c416ebf425e130e78a170ad6f2493a8580ac93bb33e635e290abbff1742cb617cc0d7efb1661fecdb2f857018646f2df262e9cd3aad9a4021c7941f3f7eabc61d6d9563c3298ec9bcf10b10c6e45fc2c42737818efcee9676898d17d58281419b96bc451011c691538c8ca8825e5e01bbdbbb88bdd29e0c5255fc1ac1d26b97e77f397bc63c7f9b66954e5ceb292ef3c98817b64753481dc133ef6d14c0188a75ae58bcdcdf713fe87a803ac813bc688266f</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://ini105.github.io/">@王兮沐</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://ini105.github.io/2021/07/13/plc/">https://ini105.github.io/2021/07/13/plc/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/plc/">plc</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>Sponsor</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related  no-desc" href="/2020/09/05/windows/" title="Windows"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">Windows</div></div></div></a><a class="pagination-related  no-desc" href="/2024/01/06/S7-PLCSIM%20Advanced/" title="S7-PLCSIM 使用简要说明"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">S7-PLCSIM 使用简要说明</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><a class="pagination-related no-desc" href="/2024/01/06/S7-PLCSIM%20Advanced/" title="S7-PLCSIM 使用简要说明"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-01-06</div><div class="info-item-2">S7-PLCSIM 使用简要说明</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">@王兮沐</div><div class="author-info-description">FSE</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">27</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">32</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">22</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/ini105/"><i class="fab fa-github"></i><span>oi~</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/ini105" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:lyu891330971@hotmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Hi, this is my Blog!</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content toc-div-class" style="display:none"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A9%E7%94%A8-Python-%E8%AF%BB%E5%8F%96-PLC1500"><span class="toc-number">1.</span> <span class="toc-text">利用 Python 读取 PLC1500</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/08/27/index/" title="Untitled">Untitled</a><time datetime="2025-08-27T01:45:54.415Z" title="Created 2025-08-27 09:45:54">2025-08-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/08/24/archlinux/" title="Archlinux">Archlinux</a><time datetime="2025-08-24T00:03:09.000Z" title="Created 2025-08-24 08:03:09">2025-08-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/08/plcsim/" title="S7-PLCSIM">S7-PLCSIM</a><time datetime="2025-07-08T11:00:00.000Z" title="Created 2025-07-08 19:00:00">2025-07-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/04/08/d445/" title="D445调试流程(1300)">D445调试流程(1300)</a><time datetime="2025-04-08T11:00:00.000Z" title="Created 2025-04-08 19:00:00">2025-04-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/01/12/sick_s300/" title="SICK-S300参数配置">SICK-S300参数配置</a><time datetime="2025-01-12T08:46:42.000Z" title="Created 2025-01-12 16:46:42">2025-01-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/01/12/1518tf/" title="单机控制改同步控制[1518TF]">单机控制改同步控制[1518TF]</a><time datetime="2025-01-12T08:30:45.000Z" title="Created 2025-01-12 16:30:45">2025-01-12</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/footer_img.jpg);"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By @王兮沐</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div><div class="footer_custom_text"><div>Hi, welcome to my <a href="https://ini105.github.io/" target="_blank">blog </a>!</div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Toggle Between Traditional and Simplified Chinese">简</button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="9722010827" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-theme="#F0FFFF" data-order="random"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      true 
+        ? (usePjax ? pjax.loadUrl('/404.html') : window.location.href = '/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
